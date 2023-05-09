@@ -40,7 +40,7 @@ jobs:
 #       arch: 'amd64'
 #       script:
 #         - echo "No Build"
-    - stage: "Instal addons on linux"
+    - stage: "Instal addons on linux "
       name: "addons on focal distribution gpu xlarge"
       dist: focal
       addons:
