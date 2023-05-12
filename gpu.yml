@@ -1,15 +1,15 @@
 jobs:
   include:
-    - stage: "NO GPU"
-      name: "there is no gpu used"
-      dist: focal
-      vm:
-        size: 'medium'
-      arch: 'amd64'
-      script:
-        - df -h
-        - lspci
-        - python hello_world.py
+#     - stage: "NO GPU"
+#       name: "there is no gpu used"
+#       dist: focal
+#       vm:
+#         size: 'medium'
+#       arch: 'amd64'
+#       script:
+#         - df -h
+#         - lspci
+#         - python hello_world.py
 #     - stage: "GPU - with no addons medium"
 #       name: "with no addons"
 #       dist: focal
@@ -32,14 +32,14 @@ jobs:
 #         - lspci
 #         - python hello_world.py
 #         - bash render_script.sh
-#     - stage: "GPU - with no addons - Windows Build - No Run"
-#       name: "with no addons"
-#       os: windows
-#       vm:
-#         size: 'gpu-medium'
-#       arch: 'amd64'
-#       script:
-#         - echo "No Build"
+    - stage: "GPU - with no addons - Windows Build - No Run"
+      name: "with no addons"
+      os: windows
+      vm:
+        size: 'gpu-medium'
+      arch: 'amd64'
+      script:
+        - echo "No Build"
 #     - stage: "Instal addons on linux "
 #       name: "addons on focal distribution gpu xlarge"
 #       dist: focal
