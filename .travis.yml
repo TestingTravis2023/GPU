@@ -1,5 +1,5 @@
-os: linux
-dist: focal
+os: windows
+# dist: focal
 language: python
 
 # branches:
